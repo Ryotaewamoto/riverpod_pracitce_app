@@ -23,12 +23,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomeScreen(),
+      home: const HomeScreen(),
     );
   }
 }
 
 class HomeScreen extends HookConsumerWidget {
+  const HomeScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     ref.listen<CustomException?>(itemListExceptionProvider, (previous, next) {
@@ -141,7 +143,6 @@ class AddItemDialog extends HookConsumerWidget {
   }
 }
 
-// TODO: I don't understand this code.
 final currentItem = Provider<Item>((_) => throw UnimplementedError());
 
 class ItemList extends HookConsumerWidget {
@@ -186,14 +187,10 @@ class ItemTile extends HookConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final item = ref.watch(currentItem);
     return Slidable(
-      // The start action pane is the one at the left or the top side.
       endActionPane: ActionPane(
-        // A motion is a widget used to control how the pane animates.
+        extentRatio: 0.25,
         motion: const ScrollMotion(),
-
-        // All actions are defined in the children parameter.
         children: [
-          // A SlidableAction can have an icon and/or a label.
           SlidableAction(
             onPressed: (context) {
               ref
@@ -244,7 +241,7 @@ class ItemListError extends HookConsumerWidget {
           const SizedBox(height: 20.0),
           ElevatedButton(
             onPressed: () => ref
-                .watch(itemListControllerProvider.notifier)
+                .read(itemListControllerProvider.notifier)
                 .retrieveItems(isRefreshing: true),
             child: const Text('Retry'),
           ),

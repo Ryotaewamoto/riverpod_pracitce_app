@@ -1,5 +1,4 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:riverpod_practice_app/extensions/firebase_firestore_extension.dart';
 import 'package:riverpod_practice_app/general_provider.dart';

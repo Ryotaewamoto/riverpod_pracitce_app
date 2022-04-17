@@ -56,7 +56,7 @@ class ItemListController extends StateNotifier<AsyncValue<List<Item>>> {
     try {
       final items =
           await _read(itemRepositoryProvider).retrieveItem(userId: _userId!);
-      // TODO: I don't understand this code.
+
       // Ref: https://blog.mrym.tv/2019/12/traps-on-calling-setstate-inside-initstate/
       if (mounted) {
         state = AsyncValue.data(items);

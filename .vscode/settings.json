@@ -25,11 +25,13 @@
   "cSpell.words": [
     "aidl",
     "appbar",
+    "autofocus",
     "chewie",
     "dotenv",
     "fluttertoast",
     "fullscreen",
     "linkify",
-    "nullsafety"
+    "nullsafety",
+    "riverpod"
   ],
 }
