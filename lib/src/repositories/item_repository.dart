@@ -1,9 +1,10 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:riverpod_practice_app/extensions/firebase_firestore_extension.dart';
-import 'package:riverpod_practice_app/general_provider.dart';
-import 'package:riverpod_practice_app/models/item_model.dart';
-import 'package:riverpod_practice_app/repositories/custom_exception.dart';
+import 'package:riverpod_practice_app/src/extensions/firebase_firestore_extension.dart';
+
+import '../../general_provider.dart';
+import '../models/item_model.dart';
+import 'custom_exception.dart';
 
 abstract class BaseItemRepository {
   Future<List<Item>> retrieveItem({required String userId});

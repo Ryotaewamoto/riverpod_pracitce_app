@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "639017357545",
+    "project_id": "riverpod-practice-app-41008",
+    "storage_bucket": "riverpod-practice-app-41008.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639017357545:android:0dab1bd928716665462078",
+        "android_client_info": {
+          "package_name": "com.example.riverpod_firebase_auth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "639017357545-620jhvtrtdjfoq6vafatscheau1ieb0u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXJlybry3Vad11a82J5eD3_oeQEpCP8Pc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639017357545-620jhvtrtdjfoq6vafatscheau1ieb0u.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "639017357545-gd64mf65suirbf4o72r3dialqn0v6d1e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.riverpodPracticeApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639017357545:android:24b32e318d7f52c2462078",
+        "android_client_info": {
+          "package_name": "com.example.riverpod_practice_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "639017357545-620jhvtrtdjfoq6vafatscheau1ieb0u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXJlybry3Vad11a82J5eD3_oeQEpCP8Pc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639017357545-620jhvtrtdjfoq6vafatscheau1ieb0u.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "639017357545-gd64mf65suirbf4o72r3dialqn0v6d1e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.riverpodPracticeApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

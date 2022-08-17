@@ -18,6 +18,15 @@
   "dart.previewFlutterUiGuidesCustomTracking": true,
   "dart.closingLabels": false,
   "dart.hotReloadOnSave": "manual", // command + sを押した際にhot reload
+  // fvm
+    "dart.flutterSdkPath": ".fvm/flutter_sdk",
+  "search.exclude": {
+    "**/.fvm": true
+  },
+  "files.watcherExclude": {
+    "**/.fvm": true
+  },
+  "dart.runPubGetOnPubspecChanges": false,
   // files
   "files.autoSave": "onFocusChange",
   "cSpell.userWords": ["cupertino", "firestore"],
